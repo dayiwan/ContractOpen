@@ -1,0 +1,113 @@
+.el-header{
+    border: 1px #ebeef5 solid;
+    position: relative;
+    height: 75px;
+    line-height: 75px;
+    background: #ffffff;
+    font-weight: bolder;
+    padding-left: 30px;
+    &:before{
+        content: " ";
+        display:block;
+        height:30px;
+        width: 4px;
+        position: absolute;
+        left: 20px;
+        top: 22px;
+        background: #217eff;
+    }
+    .left{
+        float: left;
+        font-size: 22px;
+        color: #4f5b72;
+        margin-left:15px;
+
+    }
+    .right{
+        float: right;
+    }
+}
+.el-main{
+    padding: 0 0 20px 0 !important;
+    .order_header{
+        border: 1px #ebeef5 solid;
+        border-top: none;
+        height: 70px;
+        line-height: 70px;
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        box-sizing: border-box;
+        .left_tab{
+            text-align: left;
+            padding-left: 20px;
+            flex: 1;
+        }
+        .right_form{
+            /deep/ .el-form--inline .el-form-item__content{
+                vertical-align: middle;
+            }
+            /deep/ .el-form-item--mini.el-form-item, .el-form-item--small.el-form-item{
+                margin-bottom: 0;
+            }
+        }
+        .right_form .el-form-item{margin-bottom: 0}
+        .right_form .el-input--mini .el-input__inner{height: 35px;line-height: 38px;}
+        /deep/.right_form .el-form--inline .el-form-item__label{font-size: 16px}
+    }
+.order_list{
+    padding: 0;
+    padding: 0 15px;
+    margin-top: 15px;
+    background: #ffffff;
+    box-sizing: border-box;
+    .el-table{
+        font-size: 14px;
+    }
+    /deep/ .el-table__header .cell {
+        font-size: 14px;
+        font-weight: normal;
+    }
+    .one {
+        /deep/ .el-table tbody tr:hover > td {
+            background-color: #ffffff !important
+        }
+
+        /deep/ .el-table td, .el-table th.is-leaf {
+            border-bottom: 1px dotted #EBEEF5 !important;
+        }
+
+        /deep/ .el-table__row td:nth-child(4) {
+            border-left: 1px dotted #EBEEF5 !important;
+        }
+        /deep/ .el-table__header thead tr th:nth-child(4) {
+            color: #FDA102;
+        }
+    }
+    .two,.three {
+        /deep/ .el-table tbody tr:hover > td {
+            background-color: #ffffff !important
+        }
+
+        /deep/ .el-table td, .el-table th.is-leaf {
+            border-bottom: 1px dotted #EBEEF5 !important;
+        }
+
+        /deep/ .el-table__row td:nth-child(6) {
+            border-left: 1px dotted #EBEEF5 !important;
+        }
+        /deep/ .el-table__header thead tr th:nth-child(5) {
+            color: #5ECAA0;
+        }
+    }
+    .btnDelete{display: inline-block;margin-left: 15px;font-size: 14px; cursor: pointer}
+    .btn button{height: 35px;line-height: 35px;padding: 0 20px}
+    .footer_box{font-size: 14px;color: #8a979e;display: flex;justify-content: space-between;height: 60px;line-height: 60px}
+}
+}
+.el-footer{
+    background: #ffffff;
+    /deep/ .el-pager .active{
+        border: 1px solid #efefef;
+    }
+}

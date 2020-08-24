@@ -1,0 +1,17 @@
+.price-page{
+    margin: 0 auto;
+    position: relative;
+    padding: 50px 180px;
+    .content{
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      }
+    .pagination{
+      position: absolute;
+      left: 50%;
+      bottom: 0;
+      transform: translateX(-50%);
+      margin-bottom: 50px;
+    }
+  }

@@ -1,0 +1,82 @@
+.el-header{
+    border: 1px #ebeef5 solid;
+    position: relative;
+    height: 75px;
+    line-height: 75px;
+    background: #ffffff;
+    font-weight: bolder;
+    padding-left: 30px;
+    &:before{
+        content: " ";
+        display:block;
+        height:30px;
+        width: 4px;
+        position: absolute;
+        left: 20px;
+        top: 22px;
+        background: #217eff;
+    }
+    .left{
+        float: left;
+        font-size: 22px;
+        color: #4f5b72;
+        margin-left:15px;
+
+    }
+    .right{
+        float: right;
+    }
+}
+.el-main{
+    padding: 0 0 20px 0 !important;
+    .user_header{
+        border: 1px #ebeef5 solid;
+        border-top: none;
+        height: 70px;
+        line-height: 70px;
+        display: flex;
+        align-items: center;
+        background: #ffffff;
+        box-sizing: border-box;
+        .left_tab{
+            text-align: left;
+            padding-left: 20px;
+            flex: 1;
+        }
+        .right_form{
+            /deep/ .el-form--inline .el-form-item__content{
+                vertical-align: middle;
+            }
+            /deep/ .el-form-item--mini.el-form-item, .el-form-item--small.el-form-item{
+                margin-bottom: 0;
+            }
+        }
+        .right_form .el-form-item{margin-bottom: 0}
+        .right_form .el-input--mini .el-input__inner{height: 35px;line-height: 38px;}
+        /deep/.right_form .el-form--inline .el-form-item__label{font-size: 16px}
+    }
+    .el-table .cell {
+        font-weight: normal
+    }
+    .el-table .el-table__row .el-button-group .el-button {
+        border-radius: 4px;
+        margin-left:15px;
+    }
+    .el-table .el-table__row .el-button-group .edit {
+        background: #cce1ff;
+        border-color: #7da9e6;
+        color: #2f7ae3
+        
+    }
+    .el-table .el-table__row .el-button-group .delete {
+        background: #ffebeb;
+        border-color: #ed9c9b;
+        color: #ea3e3c
+    }
+    .el-footer {
+        background: #ffffff;
+      /deep/ .el-pager .active {
+        border: 1px solid #efefef;
+      }
+      }
+}

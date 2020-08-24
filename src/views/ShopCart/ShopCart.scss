@@ -1,0 +1,124 @@
+.container {
+    padding: 30px 200px;
+    .data-list {
+      width: 100%;
+      border: 1px solid #f1f3f9;
+      &-title {
+        width: 100%;
+        height: 30px;
+        border: 1px solid #f1f3f9;
+        position: relative;
+        background: #f7f9ff;
+        span {
+          line-height: 30px;
+          float: left;
+          font-size: 14px;
+          margin-left: 20px;
+          color: #b1b4bb;
+        }
+      }
+    }
+    .model-list {
+      width: 100%;
+      height: 140px;
+      &-name {
+        width: 50%;
+        float: left;
+        height: 30px;
+        background: #f7f9ff;
+        border-left: 1px solid #eee;
+        border-right: 1px solid #eee;
+        text-align: left;
+        span {
+          margin-left: 20px;
+          line-height: 30px;
+          font-size: 14px;
+          color: #b1b4bb;
+        }
+      }
+      &-purpose {
+        float: left;
+        width: 25%;
+        height: 30px;
+        background: #f7f9ff;
+        border-right: 1px solid #eee;
+        text-align: left;
+        span {
+          margin-left: 20px;
+          line-height: 30px;
+          font-size: 14px;
+          color: #b1b4bb;
+        }
+        .content {
+          width: 100%;
+          height: 114px;
+          border-right: 1px solid #eee;
+          border-bottom: 1px solid #eee;
+          background: #fff;
+        }
+        /deep/.el-textarea__inner {
+          margin-top: 5px;
+          height: 90px;
+          border: none;
+        }
+      }
+    }
+    .settlement {
+      clear: both;
+      width: 100%;
+      height: 80px;
+      background: #fff;
+      border: 1px solid #f1f3f9;
+      .check {
+        float: left;
+        margin: 24px 0 0 40px;
+      }
+      .checkName {
+        margin-left: 20px;
+        font-size: 14px;
+      }
+      .add-order {
+        float: right;
+        margin-right: 30px;
+        line-height: 80px;
+      }
+      .all-money {
+        float: right;
+        margin-right: 40px;
+        margin-top: 24px;
+      }
+      .all-data {
+        padding: 0 10px;
+        margin-right: 500px;
+        margin-top: 24px;
+        border-right: 2px solid #dde0e6;
+        height: 40px;
+        line-height: 20px;
+        float: right;
+        margin-right: 30px;
+      }
+    }
+  }
+  .el-table--scrollable-y {
+    /deep/.el-table__body-wrapper::-webkit-scrollbar {
+      width: 4px;
+    }
+    /deep/.gutter {
+      width: 4px !important;
+    }
+  }
+  .el-table--scrollable-y {
+    /deep/.el-table__body-wrapper::-webkit-scrollbar-thumb {
+      background-color: #d8d8d8ff;
+      border-radius: 7px;
+      // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    }
+  }
+  /*定义滚动条的轨道颜色、内阴影及圆角*/
+  .el-table--scrollable-y {
+    /deep/.el-table__body-wrapper::-webkit-scrollbar-track {
+      // box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+      background-color: #fff;
+      border-radius: 3px;
+    }
+  }

@@ -1,0 +1,10 @@
+#layout {
+    @include flex(column);
+    min-height: 100%;
+  }
+  #container {
+    width: 100%;
+    flex: 1;
+    background-color: $color-main-bg;
+    overflow: auto;
+  }

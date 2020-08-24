@@ -1,0 +1,98 @@
+.resource-page {
+    color: #4d5361;
+    margin: 0 auto;
+    position: relative;
+    padding: 20px 250px;
+    .top_nav {
+      display: flex;
+      flex-direction: column;
+    }
+    .content {
+      display: flex;
+      border: 1px solid #eff1f7;
+      height: 120px;
+      .title {
+        background-color: #f9f9f9;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        font-size: 12px;
+        color: #a7afb3;
+        font-weight: bold;
+      }
+      .radio_bar {
+        display: flex;
+        flex: 1;
+        flex-direction: column;
+        justify-content: center;
+        .top {
+          padding-left: 20px;
+          height: 44px;
+          display: flex;
+          align-items: center;
+          background-color: #fff;
+        }
+        .bottom {
+          margin-top: 5px;
+          display: flex;
+          padding-left: 20px;
+          flex-wrap: wrap;
+          border-top: 1px solid #eff1f7;
+          background-color: #fff;
+          span {
+            padding: 5px 12px;
+            border-radius: 5px;
+            margin: 5px 5px;
+            font-size: 12px;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+    .label {
+      height: 40px;
+      display: flex;
+      border: 1px solid #eff1f7;
+      .title {
+        background-color: #f9f9f9;
+        display: flex;
+        height: 100%;
+        justify-content: center;
+        align-items: center;
+        width: 80px;
+        font-size: 12px;
+        color: #a7afb3;
+        font-weight: bold;
+      }
+      .item {
+        background-color: white;
+        padding-left: 20px;
+        display: flex;
+        align-items: center;
+        span {
+          padding: 5px 12px;
+          border-radius: 5px;
+          margin: 5px 5px;
+          font-size: 12px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  .search{
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .container{
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+  .active {
+    background-color: #409eff;
+    color: #ffffff;
+  }
