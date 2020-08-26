@@ -17,21 +17,21 @@ Vue.config.productionTip = false
 const routerWhiteList = ['/login'];
 
 
-router.beforeEach((to, from, next) => {
-    // 记录路由，登录后从哪来让他到哪去
-    window.sessionStorage.formQuery = from.path
-    if (routerWhiteList.indexOf(to.path) === -1) {
-        if (getToken()) {
-            next();
-        } else {
-            next({
-                path: '/login'
-            })
-        }        
-    } else {
-        next();
-    }
-});
+// router.beforeEach((to, from, next) => {
+//     // 记录路由，登录后从哪来让他到哪去
+//     window.sessionStorage.formQuery = from.path
+//     if (routerWhiteList.indexOf(to.path) === -1) {
+//         if (getToken()) {
+//             next();
+//         } else {
+//             next({
+//                 path: '/login'
+//             })
+//         }        
+//     } else {
+//         next();
+//     }
+// });
 
 
 new Vue({
