@@ -209,9 +209,16 @@ export default {
       };
       if (type == "top") {
         this.tableData.splice(this.currentIndex, 0, item);
-        this.currentIndex = this.currentIndex + 1;
+        if (this.tableData && this.tableData.length == 1) {
+          this.$refs.prepareTable.setCurrentRow(item);
+        } else {
+          this.currentIndex = this.currentIndex + 1;
+        }
       } else {
         this.tableData.splice(this.currentIndex + 1, 0, item);
+        if (this.tableData && this.tableData.length == 1) {
+          this.$refs.prepareTable.setCurrentRow(item);
+        }
       }
       this.rowIncreaseId = this.rowIncreaseId + 1;
     }
