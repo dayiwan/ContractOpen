@@ -25,7 +25,7 @@ const routes = [{
         name: 'dataService',
         component: () =>
             import('@/views/dataService/dataService.vue'),
-    },{  //联邦建模
+    }, {  //联邦建模
         path: '/dataModel',
         name: 'dataModel',
         component: () =>
@@ -35,7 +35,7 @@ const routes = [{
         name: 'dataBox',
         component: () =>
             import('@/views/dataBox/dataBox.vue'),
-    },{  //数据查询
+    }, {  //数据查询
         path: '/dataSearch',
         name: 'dataSearch',
         component: () =>
@@ -251,6 +251,11 @@ const routes = [{
             name: 'orderAudit',
             component: () =>
                 import('@/views/UserCenter/OrderAudit/OrderAudit.vue')
+        }, {
+            path: 'taskSchedule',
+            name: 'taskSchedule',
+            component: () =>
+                import('@/views/UserCenter/TaskSchedule/TaskSchedule.vue')
         }, {
             path: 'addUser',
             name: 'addUser',

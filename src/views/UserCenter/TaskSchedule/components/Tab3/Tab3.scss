@@ -1,0 +1,89 @@
+.tab3-page {
+    .party-item {
+        border-radius: 4px 4px 0px 0px;
+        margin-bottom: 20px;
+
+        .title {
+            height: 40px;
+            line-height: 40px;
+            padding-left: 18px;
+            color: #3a404e;
+            background-image: linear-gradient(0deg,
+                    #f0f5fe 0%,
+                    #ffffff 100%),
+                linear-gradient(#f6f7f9,
+                    #f6f7f9);
+            background-blend-mode: normal,
+                normal;
+            border: 1px solid #EBEEF5;
+
+            >span {
+                font-weight: bold;
+            }
+        }
+
+        .cont {
+            display: flex;
+            flex-wrap: wrap;
+            border-left: 1px solid #EBEEF5;
+
+            >div {
+                flex-basis: 50%;
+                display: flex;
+                border-bottom: 1px solid #EBEEF5;
+            }
+
+            .btn {
+                flex-shrink: 0;
+                padding: 16px 18px 16px 18px;
+                border-right: 1px solid #EBEEF5;
+                background-color: #fbfbfb;
+
+                >span {
+                    color: #ffffff;
+                    font-size: 14px;
+                    padding: 6px 15px;
+                    background-color: #217eff;
+                    border-radius: 2px;
+                    cursor: pointer;
+                }
+            }
+
+            .result {
+                flex: auto;
+                padding: 16px 18px 16px 18px;
+                border-right: 1px solid #EBEEF5;
+
+                .status {
+                    display: flex;
+                    align-items: center;
+
+                    >span {
+                        color: #52c41a;
+                        padding-left: 8px;
+                    }
+                }
+
+                .desc {
+                    color: #7f8fa4;
+                    font-size: 14px;
+
+                    >div {
+                        display: flex;
+                        align-items: center;
+                    }
+
+                    .param-value {
+                        font-weight: bold;
+                        word-break: break-all;
+                        padding-left: 8px;
+                    }
+                }
+            }
+        }
+    }
+
+    .party-item:last-child {
+        margin-bottom: 0;
+    }
+}

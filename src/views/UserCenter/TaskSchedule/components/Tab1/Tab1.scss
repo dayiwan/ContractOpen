@@ -1,0 +1,46 @@
+.tab1-page {
+    .operation {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+        position: relative;
+
+        img {
+            margin-right: 10px;
+            cursor: pointer;
+        }
+
+        >div {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            font-size: 16px;
+            font-weight: bold;
+            color: #3a404e;
+        }
+    }
+
+    .el-table {
+        border-radius: 4px 4px 0 0;
+
+        /deep/ .table-header {
+            th {
+                padding: 8px 0;
+                background-image: linear-gradient(0deg,
+                        #f0f5fe 0%,
+                        #ffffff 100%),
+                    linear-gradient(#f6f7f9,
+                        #f6f7f9);
+                background-blend-mode: normal,
+                    normal;
+                box-shadow: 0px 0px 1px 0px rgba(6, 2, 3, 0.3);
+            }
+        }
+
+        /deep/ .table-row {
+            td {
+                padding: 8px 0;
+            }
+        }
+    }
+}
