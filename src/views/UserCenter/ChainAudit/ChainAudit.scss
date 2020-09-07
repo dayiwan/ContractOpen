@@ -1,0 +1,210 @@
+.chain-audit-page {
+    text-align: left;
+
+    h3 {
+        margin: 0;
+        padding: 0;
+    }
+
+    .statistic {
+        border: solid 1px #ebeef5;
+        margin-bottom: 15px;
+        background-color: #ffffff;
+
+        h3 {
+            font-size: 16px;
+            color: #3a404e;
+            padding: 15px 25px;
+            border-bottom: 1px solid #ebeef5;
+        }
+
+        >div {
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 15px;
+
+            .card-item {
+                width: 20%;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                flex-wrap: wrap;
+                margin-top: 15px;
+                padding: 7px 0;
+                background-blend-mode: normal,
+                    normal;
+                border-radius: 4px;
+
+                .num {
+                    font-size: 24px;
+                    color: #ffffff;
+                    font-weight: bold;
+                }
+
+                .desc {
+                    font-size: 14px;
+                    color: #ffffff;
+                }
+            }
+        }
+    }
+
+    /deep/ .el-tabs--border-card {
+        box-shadow: none;
+    }
+
+    /deep/ .el-tabs__content {
+        padding: 0px;
+        text-align: left;
+    }
+
+    /deep/ .el-tabs__item {
+        height: 56px;
+        line-height: 56px;
+        font-size: 16px;
+    }
+
+    .search-form {
+        background-color: #eff3f6;
+        margin: 12px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 10px;
+        flex-wrap: wrap;
+
+        .el-form-item {
+            margin: 13px 0;
+
+            /deep/ .el-form-item__label {
+                color: #7f8fa4;
+            }
+
+            /deep/ .el-form-item__content {
+                input {
+                    background-image: linear-gradient(0deg,
+                            #f2f4f7 0%,
+                            #feffff 100%);
+                    border-radius: 4px;
+                    border: solid 1px #ced0da;
+                }
+            }
+
+            /deep/ .el-date-editor {
+                background-image: linear-gradient(0deg,
+                        #f2f4f7 0%,
+                        #feffff 100%);
+                border-radius: 4px;
+                border: solid 1px #ced0da;
+
+                .el-range-input {
+                    border-radius: 0px;
+                    border: solid 0px #ced0da;
+                }
+            }
+        }
+    }
+
+    .list {
+        background: #eff3f6;
+
+        .list-item {
+            margin-bottom: 15px;
+            border-radius: 0px;
+
+            /deep/ .el-card__header {
+                background-color: #f7f9fa;
+                padding: 18px 30px;
+
+                .item-header {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    flex-wrap: wrap;
+                    font-size: 14px;
+
+                    .item-label {
+                        color: #7f8fa4;
+                    }
+
+                    .item-desc {
+                        color: #354052;
+                    }
+                }
+            }
+
+            /deep/ .el-card__body {
+                padding: 0px 12px;
+
+                /deep/ .el-table::before {
+                    display: none;
+                }
+
+                /deep/ .el-table__header {
+                    thead {
+                        th {
+                            padding: 5px 0;
+                            font-weight: normal;
+                        }
+                    }
+                }
+
+                /deep/ .el-table__body {
+                    tbody {
+                        td {
+                            color: #475886;
+                        }
+
+                        tr:last-child {
+                            td {
+                                border-bottom: 0px;
+                            }
+                        }
+
+                        .cell {
+                            >div {
+                                display: flex;
+                                align-items: center;
+                                cursor: pointer;
+
+                                >button {
+                                    color: #9bacc4;
+                                }
+                            }
+
+                            >div:hover {
+                                >button {
+                                    color: #0090ff;
+                                }
+
+                                .icon-img {
+                                    background: url(../../../assets/usercenter/chainAudit/detail-hover.png)
+                                }
+                            }
+
+                        }
+
+                        .icon-img {
+                            background: url(../../../assets/usercenter/chainAudit/detail.png) no-repeat center;
+                            background-size: 100%;
+                            width: 16px;
+                            height: 16px;
+                            margin-right: 5px;
+                        }
+                    }
+                }
+            }
+        }
+
+        .el-card.is-hover-shadow:hover {
+            box-shadow: 0px 0px 6px 0px rgba(0, 107, 255, 0.4);
+        }
+
+        .el-pagination {
+            padding-bottom: 15px;
+            text-align: right;
+            margin-right: 15px;
+        }
+    }
+}

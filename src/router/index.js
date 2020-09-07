@@ -257,6 +257,16 @@ const routes = [{
             component: () =>
                 import('@/views/UserCenter/TaskSchedule/TaskSchedule.vue')
         }, {
+            path: 'chainAudit/:type/:orderId/:datasetId',
+            name: 'chainAuditDetail',
+            component: () =>
+                import('@/views/UserCenter/ChainAudit/ChainAuditDetail/ChainAuditDetail.vue')
+        }, {
+            path: 'chainAudit',
+            name: 'chainAudit',
+            component: () =>
+                import('@/views/UserCenter/ChainAudit/ChainAudit.vue')
+        }, {
             path: 'addUser',
             name: 'addUser',
             component: () =>

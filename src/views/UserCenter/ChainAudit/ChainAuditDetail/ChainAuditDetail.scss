@@ -1,0 +1,91 @@
+.chain-audit-detail-page {
+    text-align: left;
+    background-color: #ffffff;
+    border: solid 1px #ebeef5;
+
+    .top {
+        height: 68px;
+        border-bottom: solid 1px #ebeef5;
+        display: flex;
+        align-items: center;
+        color: #7f8fa4;
+
+        >span {
+            padding-left: 140px;
+        }
+
+        .order-id {
+            font-weight: bold;
+            color: #475886;
+        }
+
+        .order-time {
+            color: #354052;
+        }
+    }
+
+    .cont {
+        .cont-item {
+            display: flex;
+            height: 50px;
+            border-bottom: solid 1px #e8eff3;
+
+            .item-label {
+                flex-basis: 246px;
+                background-color: #e7f3f9;
+                line-height: 50px;
+                font-size: 14px;
+                color: #7f8fa4;
+                padding-left: 140px;
+            }
+
+            .item-desc {
+                flex: auto;
+                line-height: 50px;
+                padding-left: 24px;
+                font-size: 14px;
+                color: #354052;
+            }
+
+            .result {
+                display: flex;
+                align-items: center;
+
+                img {
+                    margin-right: 5px;
+                    margin-bottom: 5px;
+                }
+            }
+
+            .btn {
+                display: flex;
+                align-items: center;
+
+                >div {
+                    display: flex;
+                    align-items: center;
+                    color: #0090ff;
+                    cursor: pointer;
+                    width: 130px;
+                    height: 27px;
+                    border-radius: 4px;
+                    border: solid 1px #0090ff;
+                    padding-left: 13px;
+                    >span {
+                        margin-top: 2px;
+                    }
+                }
+
+                img {
+                    margin-right: 5px;
+                    margin-bottom: -2px;
+                }
+            }
+        }
+    }
+
+    .bottom {
+        height: 62px;
+    }
+
+}

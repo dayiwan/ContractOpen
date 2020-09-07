@@ -57,6 +57,9 @@
             <el-menu-item index="/my/taskSchedule" v-if="this.menuList.includes('任务调度')">
               <span slot="title">任务调度</span>
             </el-menu-item>
+            <el-menu-item index="/my/chainAudit" v-if="this.menuList.includes('链上审计')">
+              <span slot="title">链上审计</span>
+            </el-menu-item>
             <el-menu-item index="/my/sandBox" v-if="this.menuList.includes('我的沙盒')">
               <span slot="title">我的沙盒</span>
             </el-menu-item>
@@ -81,7 +84,7 @@ export default {
   data() {
     return {
       res: [],
-      menuList: ["任务调度"],
+      menuList: ["任务调度","链上审计"],
       start: true,
       downIcon: false,
       show: true,
