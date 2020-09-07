@@ -96,7 +96,7 @@ export default {
   mounted() {},
   data() {
     return {
-      type: this.$router.history.current.params.type || 'query',
+      type: this.$route.params.type || 'query',
       detail: {
         orderId: "24515887454dsdsedw",
         orderTime: "2020-07-15  12:00:00",
